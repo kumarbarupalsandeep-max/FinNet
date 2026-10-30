@@ -4,6 +4,34 @@
 **Copyright:** © 2026 Sandeep Barupal. All rights reserved, except as stated below.  
 **Research status:** Detailed research draft — source links diye gaye hain; pricing aur market demand ko launch se pehle dobara check karna hoga.
 
+## Research Overview
+
+| Item | Details |
+|---|---|
+| Product | FinNet |
+| Main focus | Technology cost aur budget management |
+| Language | Aasaan Hindi + simple English |
+| Owner / Content Creator | Sandeep Barupal |
+| Copyright | © 2026 Sandeep Barupal |
+
+## Table of Contents
+
+- [1. FinNet kya hai?](#1-finnet-kya-hai)
+- [2. Kiske kaam aayega?](#2-kiske-kaam-aayega)
+- [3. Similar tools se kya seekhein?](#3-similar-tools-se-kya-seekhein)
+- [4. Main features](#4-main-features)
+- [5. Pages / screens](#5-pages-screens)
+- [6. Kaise kaam karega?](#6-kaise-kaam-karega)
+- [7. Technical planning](#7-technical-planning)
+- [8. Security](#8-security)
+- [9. Development phases](#9-development-phases)
+- [10. Success kaise naapenge?](#10-success-kaise-naapenge)
+- [11. Risks](#11-risks)
+- [12. Original product idea](#12-original-product-idea)
+- [13. Sources](#13-sources)
+
+---
+
 ## 1. FinNet kya hai?
 FinNet ek aisa tool ho sakta hai jo company ko bataye ki cloud, software aur technology par kitna paisa kharch ho raha hai. Ye sirf bills nahi dikhayega; ye bhi batayega ki paisa kis team ya project ne kharch kiya aur kahan cost kam ho sakti hai.
 
@@ -61,3 +89,4 @@ FinNet ko “cost se action tak” ka tool banayein: alert aaye, owner assign ho
 - [State of FinOps 2026](https://data.finops.org/)
 
 **Note:** Ye research planning ke liye hai, financial advice nahi. Competitor pricing aur feature availability ko publish karne se pehle verify karein.
+
