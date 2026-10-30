@@ -73,3 +73,28 @@ Risks: inconsistent tags, provider schema changes, delayed billing exports, doub
 
 ## 12. Next work
 Build a dated competitor matrix, review public product docs/pricing, inspect sample billing exports, write allocation and forecast user stories, then validate wireframes with finance and engineering. This document is a research baseline, not a claim that every competitor capability has been exhaustively tested.
+
+## 15. Deep research addendum — evidence and product decisions
+
+### Market evidence
+The FinOps Foundation frames FinOps as a cross-functional operating practice, not merely a cloud-bill dashboard. Its framework covers usage/cost understanding, business-value quantification, optimization, and practice governance. Microsoft’s documentation breaks this into allocation, reporting/analytics, anomaly management, forecasting, budgeting, unit economics, workload optimization, rate optimization, and governance. The 2026 State of FinOps survey also reports that organizations are extending practice scope beyond public cloud into SaaS, data center, licensing, and data platforms. Sources: [FinOps Framework](https://www.finops.org/framework/), [Microsoft FinOps docs](https://learn.microsoft.com/en-us/cloud-computing/finops/), [State of FinOps 2026](https://data.finops.org/).
+
+### Competitive implications
+FinNet should not compete only on prettier charts. The stronger product wedge is a normalized technology-spend workspace that connects cost, ownership, forecasts, business units, and actions. Start with CSV/billing export ingestion and transparent allocation rules before promising live connectors to every provider. Preserve raw source records, normalized records, and allocation outputs separately so users can audit why a number changed.
+
+### Recommended core workflows
+1. Connect or import a billing source; preview schema and validation errors before ingest.
+2. Map accounts, projects, tags, teams, and owners; expose unallocated spend explicitly.
+3. Compare actuals vs budget and forecast; explain variance drivers, not just totals.
+4. Detect anomalies with baseline, confidence, estimated impact, and an owner.
+5. Track optimization recommendations through proposed, approved, implemented, and verified states.
+6. Report cost per tenant, transaction, workload, or AI token only when a valid business denominator is available.
+
+### Data and controls
+Model ProviderAccount, BillingRecord, Resource, CostCenter, AllocationRule, Budget, Forecast, Anomaly, Recommendation, and AuditEvent. Every imported row needs source, period, currency, ingestion time, and stable identity. Allocation changes should be versioned and re-runnable. Enforce tenant isolation, least privilege, immutable audit events, currency conversion provenance, and explicit handling for credits, refunds, taxes, and shared costs.
+
+### Validation and success measures
+Interview finance, platform engineering, product, and procurement separately. Validate whether users trust allocations, can explain month-over-month variance, and can close an optimization loop. Track ingestion success, percentage of cost mapped to owners, forecast error, anomaly precision, recommendation acceptance, verified savings, and time to produce a monthly report. Do not market “savings” as verified unless a before/after baseline and measurement window exist.
+
+### Sources and caveats
+The framework sources are authoritative practice guidance, not proof that every proposed feature has market demand. Competitor pricing and connector availability must be checked directly before a buying comparison is published. FinOps Framework material is licensed CC BY 4.0 and should be attributed if adapted.
